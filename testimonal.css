@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+ body{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-attachment: fixed
+    
+}
+ main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 90%;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+ }
+.card2, .card3, .card5{
+    grid-column: span 2;
+}
+
+
+
+
+
+
+/* body{
+    background-color:  hsl(214, 17%, 92%);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-attachment: fixed
+    
+}
+ main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    width: 90%;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+ }
+ */
+ .card{
+    border-radius: 8px; 
+    box-shadow: 5px 5px 10px rgb(182, 182, 235);
+    padding: 2rem;
+}
+
+ .card1{
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    background-image: url(img/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: right ;
+    
+
+
+ }
+
+ .card1, .card4{
+    grid-column: span 2;
+ }
+
+ .headflex{
+    display: flex;
+    align-items: center;
+ }
+
+ .pagap{
+ margin: 1rem;
+ }
+
+ h1{
+    font-size: 1.7rem;
+ }
+
+ img{
+    border-radius: 25px;
+    margin-right: 0.7rem;
+ }
+
+ .card2{
+    background-color: hsl(224, 10%, 45%);
+    color: white;
+ }
+
+ .card3{
+    background-color: white;
+    color: black;
+ }
+
+ .card4{
+    background-color: hsl(0, 0%, 7%);
+    color: hsl(214, 17%, 92%);
+ }
+    
+/* .card5{
+    background-color: white;
+    color: black;
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+ }
+  */
+@media screen and (min-width: 756px) {
+    
+   body{
+    background-color:  hsl(214, 17%, 92%);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-attachment: fixed
+    
+}
+ main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    width: 90%;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+ }
+
+ .card5{
+    background-color: white;
+    color: black;
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+ }
+
+ .card2 {
+grid-column-start: 3;
+}
+
+.card4{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column: span 2;
+}
+ .card3{
+    grid-row-start: 2;
+    grid-column-start: 1;
+ }
+}
